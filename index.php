@@ -313,6 +313,8 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 
+header('Server: Ubuntu');
+header('x-powered-by: PHP');
 
 define('DBPATH', getcwd() . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR);
 
