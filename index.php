@@ -312,4 +312,10 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+
+
+define('DBPATH', getcwd() . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR);
+
+require __DIR__ . '/vendor/autoload.php';
+
 require_once BASEPATH.'core/CodeIgniter.php';

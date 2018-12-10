@@ -24,3 +24,4 @@ Fuentes:
 + https://github.com/pepeul1191/codeigniter-boilerplate
 + https://symfony.com/doc/current/components/yaml.html
 + https://www.codeigniter.com/userguide3/libraries/config.html
++ https://www.codeigniter.com/userguide3/libraries/output.html
