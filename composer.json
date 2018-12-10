@@ -20,6 +20,17 @@
     "start": "php -S localhost:8080",
     "test": "phpunit"
   },
+	"autoload": {
+    "psr-4": {
+
+    },
+	  "classmap": [
+
+	  ],
+		"files": [
+
+		]
+  },
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*"
