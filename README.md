@@ -16,6 +16,11 @@ Acceder a $config:
 
     $this->config->item('constants');
 
+Migraciones con DBMATE:
+
+    $ dbmate -d "db/migrations" -e "DATABASE_URL" new <<nombre_de_migracion>>
+    $ dbmate -d "db/migrations" up
+
 ---
 
 Fuentes:
