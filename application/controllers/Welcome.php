@@ -6,19 +6,17 @@ class Welcome extends CI_Controller
 	public function index()
 	{
 		//libraries as filters
-		/*
 		$this->load->library('ViewSessionTrue', array(
 			'config' => $this->config,
 		));
 		$this->load->library('HttpAccess',
 			array(
 				'config' => $this->config,
-				'allow' => ['GET'],
+				'allow' => ['GET', 'POST'],
 				'received' => $this->input->server('REQUEST_METHOD'),
 				'instance' => $this,
 			)
 		);
-		*/
 		//helpers
 		$this->load->helper('Wellcome');
 		//controller function
