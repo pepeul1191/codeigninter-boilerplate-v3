@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 # rest
 $route['rest']['GET'] = 'rest/index';
+$route['service']['GET'] = 'service/index';
