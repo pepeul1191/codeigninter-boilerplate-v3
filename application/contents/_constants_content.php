@@ -4,8 +4,8 @@ return
     'base_url' => 'http://localhost:8080/',
     'static_url' => 'http://localhost:8080/public/',
     'ambiente_static' => 'desarrollo',
-    'ambiente_csrf' => 'inactivo',
-    'ambiente_session' => 'inactivo',
+    'validate_csrf' => 'able',
+    'validate_session' => 'able',
     'login' => [
       'usuario' => 'admin',
       'contrasenia' => 'sistema123'

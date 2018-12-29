@@ -4,16 +4,16 @@ class ViewSessionTrue
 {
   function __construct($params)
   {
-    $continuar = true;
-		if($params['config']->item('constants')['ambiente_session'] == 'activo'){
-      if (array_key_exists('estado', $_SESSION)) {
-        if($_SESSION['estado'] != 'activo'){
-          $continuar = false;
+    $continue = true;
+		if($params['config']->item('constants')['validate_session'] == 'able'){
+      if (array_key_exists('state', $_SESSION)) {
+        if($_SESSION['state'] != 'activo'){
+          $continue = false;
         }
       }else{
-        $continuar = false;
+        $continue = false;
       }
-      if($continuar == false){
+      if($continue == false){
         header('Location: ' . $params['config']->item('constants')['base_url'] . 'error/access/505');
         exit();
       }

@@ -5,7 +5,7 @@ class ViewSessionFalse
   function __construct($params)
   {
     $continuar = true;
-		if($params['config']->item('constants')['ambiente_session'] == 'activo'){
+		if($params['config']->item('constants')['validate_session'] == 'activo'){
       if (array_key_exists('estado', $_SESSION)) {
         if($_SESSION['estado'] == 'activo'){
           $continuar = false;
