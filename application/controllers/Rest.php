@@ -35,4 +35,31 @@ class Rest extends CI_Controller
       ->set_status_header($status)
       ->set_output($rpta);
   }
+
+	public function access()
+  {
+    $rpta = '';
+    $status = 200;
+    try {
+      $rs = \Model::factory('\Models\Access\System', 'access')
+      	->select('id')
+      	->select('name')
+      	->find_array();
+      $rpta = json_encode($rs);
+    }catch (Exception $e) {
+      $status = 500;
+      $rpta = json_encode(
+        [
+          'tipo_mensaje' => 'error',
+          'mensaje' => [
+  					'No se ha podido listar los sistemas',
+  					$e->getMessage()
+  				]
+        ]
+      );
+    }
+    $this->output
+      ->set_status_header($status)
+      ->set_output($rpta);
+  }
 }

@@ -16,10 +16,21 @@ Acceder a $config:
 
     $this->config->item('constants');
 
-Migraciones con DBMATE:
+Migraciones con DBMATE - ubicaciones:
 
-    $ dbmate -d "db/migrations" -e "DATABASE_URL" new <<nombre_de_migracion>>
-    $ dbmate -d "db/migrations" up
+    $ dbmate -d "db/ubicaciones/migrations" -e "UBICACIONES" new <<nombre_de_migracion>>
+    $ dbmate -d "db/ubicaciones/migrations" up
+
+Migraciones con DBMATE - access:
+
+    $ dbmate -d "db/access/migrations" -e "ACCESS" new <<nombre_de_migracion>>
+    $ dbmate -d "db/access/migrations" -e "ACCESS" up
+    $ dbmate -d "db/access/migrations" -e "ACCESS" rollback
+
+### Dump y Restore Mysql
+
+    $ mysqldump -u root -p canchas > db/managment/canchas.sql
+    $ mysql -u root -p canchas < db/managment/canchas.sql
 
 ---
 
